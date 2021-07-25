@@ -9,6 +9,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="3"
-        android:textSize="100sp"
-        />
+        android:textSize="100sp" />
 </FrameLayout>
