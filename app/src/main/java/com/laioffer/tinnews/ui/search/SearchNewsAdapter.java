@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.laioffer.tinnews.databinding.SearchNewsItemBinding;
 import com.laioffer.tinnews.model.Article;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +39,7 @@ public class SearchNewsAdapter extends RecyclerView.Adapter<SearchNewsAdapter.Se
     public void onBindViewHolder(@NonNull SearchNewsViewHolder holder, int position) {
         Article article = articles.get(position);
         holder.itemTitleTextView.setText(article.title);
+        Picasso.get().load(article.urlToImage).resize(200, 200).into(holder.itemImageView);
     }
 
     @Override
