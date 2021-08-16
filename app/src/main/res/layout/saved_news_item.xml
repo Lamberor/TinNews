@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    app:cardCornerRadius="8dp"
+    android:layout_margin="@dimen/margin_compact"
+    app:cardCornerRadius="@dimen/margin_compact"
     app:cardElevation="12dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,6 +18,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/ic_thumb_up_24dp"
+            app:tint="@color/light_blue"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,8 +26,8 @@
             android:id="@+id/saved_item_author_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Author:"
-            android:textStyle="bold"
+            android:text="@string/saved_item_author"
+            style="@style/TinNewsMediumText"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Description:"
+            android:text="@string/saved_item_description"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/saved_item_author_content" />
